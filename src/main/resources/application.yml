@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: openschool_jwt
+
+  datasource:
+    url: jdbc:postgresql://localhost:4867/myDb
+    username: myUser
+    password: 123
+
+security:
+  jwt:
+    secret: a69b1bef2f90985756fcec8dcdf5cd544064b8c1231522796ba7c364c50816ed92a185be93ca354646576828f7814a38666e1f43451f5536783c887c51b0aa27226ece1fe68c3428904a433aec8937896f0413f1c3534419843654bbf03437c9873f33532c5dd4e31eec97b3b4b5609bab4661c376bfac2c31dbce1ed53d6bdeec4f71baf469df1a798f1a4022a577b99e4a4658afd0befd8a062ec3c4d679b262b7ee4c25ac85c6597096e9c10b7a3beb886f721ecf1cf4021fdeecd4aabb42928b1337ff024e6d15aac96dbcecf5a81b0d7423f445421ac660c3d52993f8b0679b9f05071f6155293b396d5c689db15f0a5af924dc48d391f6f85af408487c
+    tokenExpiration: 600000
+    refreshTokenExpiration: 600000
+
+server:
+  port: 8084
